@@ -1,0 +1,18 @@
+configuration:
+  ds_method: 'CIFAR10'
+  ds_shape:  [3, 32, 32]
+  ds_path: 'data/'
+
+
+architecture:
+  conv_layers: 3
+  conv_channels: [128, 256, 512]
+  conv_kernel_size: [[7, 7], [7, 7], [7, 7]]
+  conv_stride: [[1, 1], [1, 1], [1, 1]]
+  conv_paddings: [[1, 1], [1, 1], [1, 1]]
+  z_dimension: 128
+
+hyperparameters:
+  epochs: 10
+  batch_size: 32
+  learning_rate: 3e-05
